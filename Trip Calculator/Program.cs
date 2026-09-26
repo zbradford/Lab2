@@ -17,6 +17,7 @@ double gallonsNeeded = tripMiles / milesPerGallon;
 double fuelCost = gallonsNeeded * pricePerGallon;
 
 //Print The Calculations
+Console.WriteLine(" ");
 
 Console.WriteLine("Gallons Needed: " + gallonsNeeded.ToString("F2"));
 Console.WriteLine("Fuel Cost: " + fuelCost.ToString("C"));
@@ -24,6 +25,8 @@ Console.WriteLine("Fuel Cost: " + fuelCost.ToString("C"));
 //Part Two: Pizza Party
 
 //Questions
+Console.WriteLine(" ");
+
 Console.Write("How Many People Are Going? ");
 double peopleGoing = Convert.ToDouble(Console.ReadLine());
 
@@ -42,6 +45,8 @@ double personSlices = totalSlices / peopleGoing;
 double pizzaCost = numberPizzas * pizzaPrice;
 
 //Print The Calculations
+Console.WriteLine(" ");
+
 Console.WriteLine("Total Slices: " + totalSlices.ToString("F0"));
 Console.WriteLine("Slices Per Person: " + personSlices.ToString("F1"));
 Console.WriteLine("Pizza Cost: " + pizzaCost.ToString("C"));
@@ -49,6 +54,8 @@ Console.WriteLine("Pizza Cost: " + pizzaCost.ToString("C"));
 //Part Three: Paycheck
 
 //Questions
+Console.WriteLine(" ");
+
 Console.Write("How Many Hours Did You Work This Week? ");
 double hoursWorked = Convert.ToDouble(Console.ReadLine());
 
@@ -64,6 +71,8 @@ double taxWithheld = grossPay * taxRate;
 double takeHomePay = grossPay - taxWithheld;
 
 //Print The Calculations
+Console.WriteLine(" ");
+
 Console.WriteLine("Gross Pay: " + grossPay.ToString("C"));
 Console.WriteLine("Tax Withheld: " + taxWithheld.ToString("C"));
 Console.WriteLine("Take Home Pay: " + takeHomePay.ToString("C"));
@@ -76,4 +85,10 @@ double costPerPerson = tripTotal / peopleGoing;
 double takeHomePayPerHour = takeHomePay / hoursWorked;
 double hoursYouMustWork = costPerPerson / takeHomePayPerHour;
 
-//Print TheCalculations
+//Print The Calculations
+Console.WriteLine(" ");
+
+Console.WriteLine("Trip Total: " + tripTotal.ToString("C"));
+Console.WriteLine("Cost Per Person: " + costPerPerson.ToString("C"));
+Console.WriteLine("Take Home Pay Per Hour: " + takeHomePayPerHour.ToString("C"));
+Console.WriteLine("Hours You Must Work To Cover Your Share: " + hoursYouMustWork.ToString("F2"));
